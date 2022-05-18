@@ -1,0 +1,290 @@
+html {
+    font-size: 100% !important;
+}
+
+html.drizzle_html {
+    font-size: calc(16px + 0.2vw) !important;
+}
+
+:root {
+    --bs-font-sans-serif: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body,
+body#content {
+    font: 1rem/1.5 "Helvetica Neue", Arial !important;
+}
+
+body.drizzle_body {
+    font-size: 1em !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+body.drizzle_body .h1,
+body.drizzle_body .h2,
+body.drizzle_body .h3,
+body.drizzle_body .h4,
+body.drizzle_body .h5,
+body.drizzle_body .h6,
+body.drizzle_body h1,
+body.drizzle_body h2,
+body.drizzle_body h3,
+body.drizzle_body h4,
+body.drizzle_body h5,
+body.drizzle_body h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    /*por defecto en Bootstrap el margin-bottom es 0.5rem pero eso genera espacios adicionales en el portal y en las modales Drizzle*/
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+body.drizzle_body .h3,
+body.drizzle_body h3 {
+    font-size: calc(1rem + .6vw)
+}
+
+@media (min-width:1200px) {
+    body.drizzle_body .h3,
+    body.drizzle_body h3 {
+        font-size: 1.2rem
+    }
+}
+
+body.drizzle_body .h4,
+body.drizzle_body h4 {
+    font-size: calc(0.8rem + .3vw)
+}
+
+@media (min-width:1200px) {
+    body.drizzle_body .h4,
+    body.drizzle_body h4 {
+        font-size: 0.9rem
+    }
+}
+
+a,
+a:active,
+a:visited {
+    color: #2c2a29;
+    text-decoration: none;
+}
+
+a.Button,
+a.Button:active,
+a.Button:hover,
+a.Button:visited {
+    color: #ffffff !important;
+}
+
+a:hover:not(.Button) {
+    color: #333333;
+}
+
+a.MenuBar-action:hover:not(.Button) {
+    color: #009ca6;
+}
+
+hr {
+    margin: 0.5rem 0;
+}
+
+
+/* Ajuste menú mobile*/
+
+.wpthemeNavToggleBtn {
+    margin: 0;
+}
+
+.wpthemeNavToggleBtn i {
+    font-size: 1.5em;
+}
+
+
+/*Ajustes tooltips CONTACTOS*/
+
+.reden-web #redencion .fa-info-circle:hover>.tooltip,
+.reden-web .readmore:hover>.tooltip {
+    opacity: 1;
+}
+
+
+/*Ajustes para POL, Calendario de campaña y Certificados*/
+
+.theme-pol #polportletapp .container,
+.theme-pol .fancybox-is-modal .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.theme-pol #polportletapp ul,
+.fancybox-is-modal ul {
+    padding-left: 0;
+}
+
+.theme-pol #polportletapp .collapse:not(.show) {
+    display: inherit;
+}
+
+.theme-pol #polportletapp hr {
+    margin: 0;
+	clear: both;
+}
+.theme-pol #polportletapp .bo-bottom {
+	justify-content: center;
+    margin-top: 1rem;
+}
+
+.theme-pol #polportletapp .bo-contenedor .bo-btn_continuar {
+    margin: 1rem auto;
+}
+
+.theme-pol .btn-gray {
+    background: #bfbfbf;
+}
+
+.theme-pol #polportletapp .table>.table-head>.items-table-head div,
+.theme-pol #polportletapp .table>.table-head>.items-table-head span {
+    padding: 0;
+}
+
+.theme-pol .opc-reemp-text-tittle {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+.theme-pol #polportletapp .estado-cuenta .content .estado-de-cuenta .table .table-head .items-table-head {
+    padding: 0;
+}
+
+.theme-pol #polportletapp .estado-cuenta .content .estado-de-cuenta .table .table-body span,
+.theme-pol #polportletapp .estado-cuenta .content .datos-finales .table .table-body span {
+    padding: 0;
+}
+
+@media only screen and (min-width: 950px) {
+    .theme-pol #polportletapp .estado-cuenta .content .estado-de-cuenta .table .table-body {
+        margin: 0;
+        /*Nuevo*/
+    }
+    .theme-pol #polportletapp .container .order .header-add-order h1 {
+        margin: 7px 5px 7px 0px;
+    }
+    .theme-pol #polportletapp .pedido_azul .header-add-order .clothing-code,
+    .theme-pol #polportletapp .pedido_azul .header-add-order .clothing-quantity,
+    .pedido_azul .header-add-order .message,
+    .pedido_azul .header-add-order .button-add {
+        margin-top: 6px;
+    }
+    .theme-pol #polportletapp .container .order .content-add-order .total-price .totales h1 {
+        margin-bottom: 0;
+        ;
+    }
+    .theme-pol #polportletapp .pedido_azul .header-add-order .message div b {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .theme-pol #polportletapp .pedido_azul .content-add-order .controls {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 949px) {
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head>div {
+        padding: 0 9%;
+    }
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head:nth-child(3) {
+        width: 24%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .theme-pol #polportletapp .container .content .assigned-products h1 {
+        margin-bottom: 10px !important;
+    }
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head>div:nth-child(2),
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head>div:last-child {
+        width: 45% !important;
+    }
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .movil span {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .theme-pol #polportletapp .container .order .content-add-order .total-price .totales h1.movil {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .theme-pol #polportletapp .container .order .content-add-order .total-price .item-desktop-totalprice {
+        box-sizing: content-box;
+    }
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-body .items-table-body:nth-child(7) {
+        margin-left: 33px;
+    }
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head:nth-child(8) {
+        width: 17%;
+    }
+    /*Pedido Azul*/
+    .theme-pol #polportletapp .pedido_azul .content-add-order .total-price .content-total-price h1.movil {
+        display: inline-block;
+    }
+    .theme-pol #polportletapp .pedido_azul .content-add-order .total-price .content-total-price {
+        left: 0;
+    }
+    .theme-pol #polportletapp .reasignar_table td {
+        font-size: 9px !important;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 639px) {
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head>div:last-child {
+        left: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head>div:last-child {
+        left: 42px !important;
+    }
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-body .items-table-body:nth-child(7) {
+        margin-left: 22px !important;
+    }
+    .theme-pol #polportletapp #btn-message {
+        float: none !important;
+        padding: 4px 10px !important;
+    }
+    table#calendarioCampanaTbl,
+    .tablaCertificados,
+    #preguntaResp {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-head .items-table-head>div:last-child {
+        left: 36px !important;
+    }
+    .theme-pol #polportletapp .container .content .assigned-products .table .table-body .items-table-body:nth-child(7) {
+        margin-left: 17px !important;
+    }
+}
+
+#indicadoresCompradora .vertical {
+    font-size: 1.2em;
+}
